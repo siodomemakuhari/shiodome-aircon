@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>しおどめエアコンクリーニング | 第2種電気工事士による分解洗浄(名古屋・東海エリア)</title>
+<meta name="description" content="名古屋市中川区を拠点に東海エリア対応のエアコンクリーニング専門店。第2種電気工事士がすべての作業を直接担当。壁掛けタイプ専門・お掂除機能なし9,900円/台。カビ・ホコリ・ニオイを分解洗浄で徹底除去。">
+<style>
+  :root {
+    --blue: #1a7fc1;
+    --blue-dark: #0d5a8e;
+    --sky: #e8f4fb;
+    --accent: #ff8c42;
+    --text: #2b3440;
+    --gray: #6b7280;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+    color: var(--text);
+    line-height: 1.8;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 20px; max-width: 1000px; margin: 0 auto;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--blue-dark); text-decoration: none; }
+  .logo small { display: block; font-size: 11px; color: var(--gray); font-weight: 400; }
+  .header-cta {
+    background: var(--accent); color: #fff; text-decoration: none;
+    padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--sky) 0%, #d3eaf8 100%);
+    padding: 64px 20px 56px;
+    text-align: center;
+  }
+  .hero h1 { font-size: clamp(25px, 5vw, 38px); color: var(--blue-dark); line-height: 1.45; }
+  .hero p.lead { margin-top: 18px; font-size: clamp(15px, 2.5vw, 18px); color: var(--text); }
+  .hero .badges { margin-top: 26px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .hero .badge {
+    background: #fff; border: 2px solid var(--blue); color: var(--blue-dark);
+    border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 14px;
+  }
+  .hero .cta-row { margin-top: 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent); color: #fff; text-decoration: none;
+    padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 17px;
+    box-shadow: 0 4px 12px rgba(255,140,66,.35);
+  }
+  .btn-secondary {
+    background: #fff; color: var(--blue-dark); text-decoration: none;
+    padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 17px;
+    border: 2px solid var(--blue);
+  }
+
+  section { padding: 56px 0; }
+  section:nth-of-type(even) { background: var(--sky); }
+  h2 {
+    text-align: center; font-size: clamp(22px, 4vw, 30px); color: var(--blue-dark);
+    margin-bottom: 10px;
+  }
+  .sub { text-align: center; color: var(--gray); margin-bottom: 36px; font-size: 15px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 28px 24px;
+    box-shadow: 0 2px 10px rgba(13,90,142,.08);
+  }
+  .card .icon { font-size: 40px; }
+  .card h3 { font-size: 18px; color: var(--blue-dark); margin: 10px 0 8px; }
+  .card p { font-size: 14px; color: var(--text); }
+
+  .price-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(13,90,142,.08); }
+  .price-table th, .price-table td { padding: 16px 18px; text-align: left; border-bottom: 1px solid #eef2f6; }
+  .price-table th { background: var(--blue); color: #fff; font-size: 15px; }
+  .price-table td.price { text-align: right; font-weight: 700; color: var(--blue-dark); font-size: 17px; white-space: nowrap; }
+  .price-note { margin-top: 14px; font-size: 13px; color: var(--gray); }
+
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .step { background: #fff; border-radius: 12px; padding: 22px 18px; text-align: center; box-shadow: 0 2px 10px rgba(13,90,142,.08); }
+  .step .num {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--blue); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 10px;
+  }
+  .step h3 { font-size: 15px; color: var(--blue-dark); margin-bottom: 6px; }
+  .step p { font-size: 13px; color: var(--gray); }
+
+  .voice { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .voice-card {
+    background: #fff; border-radius: 12px; padding: 24px;
+    box-shadow: 0 2px 10px rgba(13,90,142,.08); font-size: 14px;
+  }
+  .voice-card .stars { color: #f5a623; font-size: 16px; letter-spacing: 2px; margin-bottom: 8px; }
+  .voice-card .who { margin-top: 10px; color: var(--gray); font-size: 12px; }
+
+  .faq { max-width: 760px; margin: 0 auto; }
+  .faq details {
+    background: #fff; border-radius: 10px; margin-bottom: 12px; padding: 18px 22px;
+    box-shadow: 0 2px 8px rgba(13,90,142,.07); cursor: pointer;
+  }
+  .faq summary { font-weight: 700; color: var(--blue-dark); font-size: 15px; }
+  .faq p { margin-top: 10px; font-size: 14px; }
+
+  .about-table { max-width: 680px; margin: 0 auto; width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(13,90,142,.08); }
+  .about-table th, .about-table td { padding: 14px 18px; border-bottom: 1px solid #eef2f6; font-size: 14px; text-align: left; }
+  .about-table th { width: 30%; background: var(--sky); color: var(--blue-dark); vertical-align: top; }
+
+  .other-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; max-width: 820px; margin: 0 auto; }
+  .os-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(13,90,142,.07); text-align: center; }
+  .os-card h3 { font-size: 15px; color: var(--blue-dark); }
+  .os-card p { font-size: 13px; color: var(--gray); margin-top: 4px; }
+
+  .contact { background: var(--blue-dark) !important; color: #fff; text-align: center; }
+  .contact h2 { color: #fff; }
+  .contact p.note { font-size: 14px; opacity: .9; max-width: 640px; margin: 0 auto; }
+  .contact .cta-row { margin-top: 26px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-line {
+    background: #06c755; color: #fff; text-decoration: none;
+    padding: 16px 36px; border-radius: 8px; font-weight: 700; font-size: 17px;
+  }
+
+  footer { background: #0a4a75; color: #cfe3f2; text-align: center; padding: 20px; font-size: 13px; }
+
+  @media (max-width: 600px) {
+    .header-cta { font-size: 13px; padding: 8px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">しおどめエアコンクリーニング<small>第2種電気工事士の分解洗浄|名古屋・東海エリア</small></a>
+    <a class="header-cta" href="#contact">ご依頼・相談</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>「効きが悪い」「カビ臭い」そのエアコン、<br>電気工事士が中まで本気で洗います。</h1>
+  <p class="lead">名古屋市中川区を拠点に東海エリアへ出張。壁掛けタイプ専門のエアコンクリーニング。</p>
+  <div class="badges">
+    <span class="badge">第2種電気工事士が全作業を担当</span>
+    <span class="badge">レビュー45件超の高評価</span>
+    <span class="badge">9,900円/台〜</span>
+  </div>
+  <div class="cta-row">
+    <a class="btn-primary" href="#contact">ご依頼・相談はこちら</a>
+    <a class="btn-secondary" href="#price">料金を見る</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>しおどめの3つの安心</h2>
+    <p class="sub">「女性のひとり暮らしでも安心してお願いできた」との声を多数いただいています</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>有資格者が直接担当</h3>
+        <p>第2種電気工事士の資格を持つ代表が、すべての作業をお伺いして直接対応。電装部分の扱いも安心してお任せください。</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>丁寧な養生・作業</h3>
+        <p>壁・床・家具をしっかり保護してから分解洗浄。片付けまで含めて「気持ちよかった」と言っていただける仕事を心がけています。</p>
+      </div>
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>わかりやすいご説明</h3>
+        <p>汚れの状態や次回クリーニングの目安まで、専門用語を避けて丁寧にお伝えします。作業中のご相談もお気軽にどうぞ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2>料金表</h2>
+    <p class="sub">すべて税込|壁掛けタイプ専門</p>
+    <table class="price-table">
+      <tr><th>メニュー</th><th>内容・目安時間</th><th style="text-align:right">料金</th></tr>
+      <tr>
+        <td>壁掛けエアコン(お掃除機能なし)</td>
+        <td>分解洗浄・専用薬剤で脱臭・抗菌|約1時間</td>
+        <td class="price">9,900円/台</td>
+      </tr>
+      <tr>
+        <td>壁掛けエアコン(お掃除機能付き)</td>
+        <td>お掃除ユニット分解を含む徹底洗浄|約1.5時間</td>
+        <td class="price">14,900円/台</td>
+      </tr>
+      <tr>
+        <td>高難度機種</td>
+        <td>SHARP エアレスト/富士通 nocria Xシリーズ/三菱電機 FZシリーズ</td>
+        <td class="price">19,000円/台</td>
+      </tr>
+      <tr>
+        <td>室外機洗浄(オプション)</td>
+        <td>熱交換器の洗浄で効きと電気代を改善</td>
+        <td class="price">3,300円/台</td>
+      </tr>
+    </table>
+    <p class="price-note">
+      ※ 名古屋市中川区を起点とし、市外の場合は高速道路代を実費でご請求いたします(軽自動車でお伺いします)<br>
+      ※ 駐車場がない場合はパーキング代のご負担をお願いいたします<br>
+      ※ 10年以上経過したエアコンも対応可能ですが、老朽化により分解中にパーツが破損する可能性をご承諾いただいた上での作業となります
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>作業の流れ</h2>
+    <p class="sub">養生から試運転まで、責任を持って対応します</p>
+    <div class="flow">
+      <div class="step"><div class="num">1</div><h3>養生</h3><p>壁・床・家具をしっかり保護します</p></div>
+      <div class="step"><div class="num">2</div><h3>分解・部品洗浄</h3><p>カバーやフィルターを外し細部まで水洗い(浴室または外水栓をお借りします)</p></div>
+      <div class="step"><div class="num">3</div><h3>本体内部の洗浄</h3><p>エアコン専用薬剤で熱交換器・ファンのカビとホコリを徹底除去。脱臭・抗菌効果あり</p></div>
+      <div class="step"><div class="num">4</div><h3>仕上げ・動作確認</h3><p>拭き上げ→組み立て→試運転まで確認して完了です</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>お客様の声</h2>
+    <p class="sub">リベシティスキルマーケットMeetsにて累計45件以上のご依頼・高評価をいただいています</p>
+    <div class="voice">
+      <div class="voice-card">
+        <div class="stars">★★★★★</div>
+        作業のたびに「今なにをしているか」を説明してもらえたので、初めてでも安心してお任せできました。この夏は快適に過ごせそうです。
+        <div class="who">エアコンクリーニングをご依頼のお客様</div>
+      </div>
+      <div class="voice-card">
+        <div class="stars">★★★★★</div>
+        2台お願いしましたが、とても丁寧で手際も良く大満足。日常のお手入れ方法まで教えてもらえました。来年は他の部屋もお願いしたいです。
+        <div class="who">2台まとめてご依頼のお客様</div>
+      </div>
+      <div class="voice-card">
+        <div class="stars">★★★★★</div>
+        養生から片付けまできっちりしていて、優しい雰囲気の方なので女性でも安心してお願いできると感じました。またリピートします。
+        <div class="who">女性のお客様</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>よくあるご質問</h2>
+    <p class="sub"></p>
+    <div class="faq">
+      <details>
+        <summary>作業に必要なスペース・設備はありますか?</summary>
+        <p>エアコンの下に脚立を立てるため、1畳以上の作業スペースの確保をお願いします。また部品洗浄のため水道をお借りします(戸建て: 外水栓または浴室/集合住宅: 浴室または水栓付きベランダ)。お掃除機能付きの機種は、本体の左右に5cm以上のすき間が必要となる場合があります。</p>
+      </details>
+      <details>
+        <summary>どんなエアコンでも対応できますか?</summary>
+        <p>壁掛けタイプ専門です。故障や異音など不具合のある機種は対応できません。10年以上経過した機種は、老朽化によるパーツ破損の可能性をご了承いただいた上で対応します。土壁・漆喰など壁の材質によっては養生が難しい場合がありますので、事前にご相談ください。</p>
+      </details>
+      <details>
+        <summary>クリーニングすると何が変わりますか?</summary>
+        <p>カビ・ホコリによるニオイの解消、風量の回復、アレルギー対策になるほか、熱交換効率が戻ることで電気代の節約にもつながります。小さなお子様やペットのいるご家庭に特におすすめです。</p>
+      </details>
+      <details>
+        <summary>対応エリアはどこまでですか?</summary>
+        <p>愛知県・岐阜県・三重県の全域、静岡県浜松市、奈良県全域、滋賀県の一部(守山市・栗東市・甲賀市・野洲市・湖南市・東近江市)に出張しています。名古屋市外は高速道路代を実費でお願いしています。</p>
+      </details>
+      <details>
+        <summary>支払い方法は何が使えますか?</summary>
+        <p>PayPay・現金・銀行振込(住信SBIネット銀行)に対応しています。クレジットカードはご利用いただけません。リベシティ会員の方はリベポイントでのお支払いも可能です。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>エアコン以外もお任せください</h2>
+    <p class="sub">電気工事士だからできる、住まいの電気まわりのお手伝い</p>
+    <div class="other-services">
+      <div class="os-card"><h3>⚡ 電気工事全般</h3><p>コンセント増設・照明交換など 8,000円〜</p></div>
+      <div class="os-card"><h3>🍽️ 据置型食洗機の取付</h3><p>分岐水栓工事込み 5,000円〜</p></div>
+      <div class="os-card"><h3>🔔 ドアホン交換</h3><p>録画対応・コードレス子機付へ 10,000円〜</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>店舗概要</h2>
+    <p class="sub"></p>
+    <table class="about-table">
+      <tr><th>屋号</th><td>しおどめエアコンクリーニング</td></tr>
+      <tr><th>代表</th><td>しおどめ(第2種電気工事士)</td></tr>
+      <tr><th>拠点</th><td>愛知県名古屋市中川区</td></tr>
+      <tr><th>対応エリア</th><td>愛知・岐阜・三重の全域、静岡県浜松市、奈良県全域、滋賀県の一部</td></tr>
+      <tr><th>事業内容</th><td>エアコンクリーニング(壁掛けタイプ専門)、電気工事、食洗機取付、ドアホン交換</td></tr>
+      <tr><th>支払い方法</th><td>PayPay/現金/銀行振込(クレジットカード不可)</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>ご依頼・お問い合わせ</h2>
+    <p class="note">「うちのエアコン、対応してもらえる?」「◯台まとめてだと時間はどれくらい?」——そんな小さなご質問もお気軽にどうぞ。後回しにせず、即レスを心がけています。</p>
+    <div class="cta-row">
+      <a class="btn-line" href="https://line.me/ti/p/Gt7xY1ijUi" target="_blank" rel="noopener">LINEで問い合わせる</a>
+      <a class="btn-primary" href="https://meets.libecity.com/service/11116" target="_blank" rel="noopener">リベシティMeetsで依頼する</a>
+      <a class="btn-secondary" style="background:#fff" href="mailto:evolution8.gsr.mr@gmail.com">メールで問い合わせる</a>
+    </div>
+    <p class="note" style="margin-top:18px; font-size:13px;">メール: evolution8.gsr.mr@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  © しおどめエアコンクリーニング|名古屋市中川区
+</footer>
+
+</body>
+</html>
