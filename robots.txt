@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siodomemakuhari.github.io/shiodome-aircon/sitemap.xml
